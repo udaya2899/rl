@@ -51,7 +51,7 @@ namespace rl
 		template<typename T>
 		inline const T& clamp(const T& v, const T& lo, const T& hi)
 		{
-			return clamp(v, lo, hi, ::std::less<T>());
+			return ::rl::math::clamp(v, lo, hi, ::std::less<T>());
 		}
 #endif
 	}
